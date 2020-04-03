@@ -4,8 +4,8 @@
     "name": "Crunchyroll Spoiler Blocker",
     "description": "Hides comments and spoiler content a on a crunchyroll video page",
     "author": "David Mendiola",
-    "browser_action": {
-        "default_icon": "pet_shop.png",
-        "default_popup": 
-    }
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "matches": ["https://www.crunchyroll.com/*"]
+    }]
 }
